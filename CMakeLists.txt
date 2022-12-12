@@ -7,7 +7,6 @@ set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -Xcompiler=-Wall")
 find_package(ament_cmake_auto REQUIRED)
 
 find_package(CUDA 11 REQUIRED)
-find_library(nvinfer REQUIRED)
 
 ament_auto_add_library(${PROJECT_NAME} SHARED
     plugins/tensorrt/modulated_deform_conv/trt_modulated_deform_conv.cpp
