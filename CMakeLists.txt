@@ -10,14 +10,11 @@ find_package(CUDAToolkit)
 ament_auto_add_library(${PROJECT_NAME} SHARED
     plugins/tensorrt/modulated_deform_conv/trt_modulated_deform_conv.cpp
     plugins/tensorrt/modulated_deform_conv/trt_modulated_deform_conv_kernel.cu
-    plugins/tensorrt/grid_sampler/trt_grid_sampler.cpp
-    plugins/tensorrt/common_impl/trt_cuda_helper.cu
-    plugins/tensorrt/grid_sampler/trt_grid_sampler_kernel.cu)
+    plugins/tensorrt/common_impl/trt_cuda_helper.cu)
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     plugins/common/
     plugins/tensorrt/modulated_deform_conv
-    plugins/tensorrt/grid_sampler
     plugins/tensorrt/common)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
