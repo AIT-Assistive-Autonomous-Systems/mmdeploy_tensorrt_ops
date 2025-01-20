@@ -6,7 +6,7 @@
   <description>TensorRT operators of mmdeploy</description>
   <maintainer email="markus.hofstaetter@ait.ac.at">Markus Hofstaetter</maintainer>
   <author email="marcel.zeilinger@ait.ac.at">Marcel Zeilinger</author>
-  <author email="markus.hofstaetter@ait.aca.t">Markus Hofstaetter</author>
+  <author email="markus.hofstaetter@ait.ac.at">Markus Hofstaetter</author>
   <license>Apache 2.0</license>
   <!-- TODO Check really necessary deps -->
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
