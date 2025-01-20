@@ -4,12 +4,32 @@
   <name>mmdeploy_tensorrt_ops</name>
   <version>0.1.0</version>
   <description>TensorRT operators of mmdeploy</description>
-  <maintainer email="marcel.zeilinger@ait.ac.at">Marcel Zeilinger</maintainer>
+  <maintainer email="markus.hofstaetter@ait.ac.at">Markus Hofstaetter</maintainer>
+  <author email="marcel.zeilinger@ait.ac.at">Marcel Zeilinger</author>
+  <author email="markus.hofstaetter@ait.aca.t">Markus Hofstaetter</author>
   <license>Apache 2.0</license>
+  <!-- TODO Check really necessary deps -->
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
-  <build_depend>libnvinfer-dev</build_depend>
-  <build_depend>cuda-nvcc-12-1</build_depend>
-  <exec_depend>libnvinfer8</exec_depend>
+  <buildtool_depend>cuda-minimal-build-12-6</buildtool_depend>
+  <build_depend>libcublas-so-12-6-dev</build_depend>
+  <build_depend>libcudnn-so-8-9-dev</build_depend>
+  <build_depend>libnvinfer-so-8-6-dev</build_depend>
+  <build_depend>libnvinfer-dispatch-so-8-6-dev</build_depend>
+  <build_depend>libnvinfer-lean-so-8-6-dev</build_depend>
+  <build_depend>libnvinfer-lean-so-8-6-dev</build_depend>
+  <build_depend>libnvinfer-plugin-so-8-6-dev</build_depend>
+  <build_depend>libnvinfer-vc-plugin-so-8-6-dev</build_depend>
+  <build_depend>libnvonnxparsers-so-8-6-dev</build_depend>
+  
+  <exec_depend>libcublas-so-12-6</exec_depend>
+  <exec_depend>libcudnn-so-8-9</exec_depend>
+  <exec_depend>libnvinfer-so-8-6</exec_depend>
+  <exec_depend>libnvinfer-dispatch-so-8-6</exec_depend>
+  <exec_depend>libnvinfer-lean-so-8-6</exec_depend>
+  <exec_depend>libnvinfer-lean-so-8-6</exec_depend>
+  <exec_depend>libnvinfer-plugin-so-8-6</exec_depend>
+  <exec_depend>libnvinfer-vc-plugin-so-8-6</exec_depend>
+  <exec_depend>libnvonnxparsers-so-8-6</exec_depend>
   <export>
     <build_type>ament_cmake</build_type>
   </export>
